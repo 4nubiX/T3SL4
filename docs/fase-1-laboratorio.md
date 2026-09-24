@@ -21,8 +21,8 @@ con snapshot `base-limpia`, y validar los supuestos S-1 a S-5 del
 5. macOS pedirá permisos (**System Settings → Privacy & Security**). Concédelos y reinicia Fusion si lo pide.
 6. Si pide licencia, elige la opción **uso personal**.
 
-Alternativa: `brew install --cask vmware-fusion`. Puede funcionar, pero depende de
-que Broadcom mantenga la descarga pública; si falla, usa el portal.
+> Homebrew **ya no** sirve: el cask `vmware-fusion` fue retirado
+> (verificado el 2026-09-24). La única vía es el portal de Broadcom.
 
 ## 2. Descargar Debian 13 arm64
 
