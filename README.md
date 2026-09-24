@@ -27,12 +27,12 @@ herramientas como el navegador o Wireshark, sin escritorio tradicional.
 
 ## Estado actual
 
-**Fase 0: cimientos documentales.** Todavía no hay código.
+**Fase 1: laboratorio.** La Fase 0 cerró el 2026-09-24 (Gate 1: GO). Todavía no hay código.
 El estado vivo está en [`tracker.md`](tracker.md).
 
 ```txt
-Fase 0  Cimientos documentales        ◀ aquí
-Fase 1  Laboratorio (VMs + onboarding)
+Fase 0  Cimientos documentales        ✔
+Fase 1  Laboratorio (VMs + onboarding) ◀ aquí
 Fase 2  install.sh v0.1 (Debian mínimo → T3SL4)
 Fase 3  Paquetes .deb propios
 Fase 4  ISO con live-build
@@ -62,6 +62,7 @@ Detalle y motivos en [`docs/10-decisions-adr.md`](docs/10-decisions-adr.md).
 | [`docs/05-test-plan.md`](docs/05-test-plan.md) | Cómo se prueba |
 | [`docs/10-decisions-adr.md`](docs/10-decisions-adr.md) | Registro de decisiones |
 | [`docs/onboarding.md`](docs/onboarding.md) | Ruta de aprendizaje para quien empieza desde cero |
+| [`docs/fase-1-laboratorio.md`](docs/fase-1-laboratorio.md) | Montar la VM arm64 en la Mac y validar supuestos |
 | [`docs/handoffs/`](docs/handoffs/) | Cierres de sesión |
 | [`tracker.md`](tracker.md) | Estado actual y próximo paso |
 | [`CHANGELOG.md`](CHANGELOG.md) | Historial de cambios |
@@ -71,6 +72,14 @@ Detalle y motivos en [`docs/10-decisions-adr.md`](docs/10-decisions-adr.md).
 - **Si nunca has usado Linux en serio:** empieza por [`docs/onboarding.md`](docs/onboarding.md).
 - **Si ya sabes:** lee la visión, el PRD y el tracker, en ese orden.
 
+## Equipo
+
+| Persona | GitHub | Rol |
+|---|---|---|
+| Santiago | [@4nubiX](https://github.com/4nubiX) | Líder y revisor de PRs |
+| Compa | [@P01ar7](https://github.com/P01ar7) | Colaborador (aprendiendo desde cero) |
+
 ## Licencia
 
-Pendiente de decidir (ver ADR-008).
+[GPL-3.0](LICENSE). Puedes usar, estudiar, modificar y redistribuir T3SL4;
+las versiones derivadas deben publicarse con la misma licencia (ver ADR-008).

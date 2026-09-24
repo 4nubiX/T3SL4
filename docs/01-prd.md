@@ -27,6 +27,9 @@ y amd64, y que el equipo entienda completa.
   pendientes están cerradas y Santiago aprobó (Gate 1).
 
 ### Fase 1 — Laboratorio
+
+Guía paso a paso: [`fase-1-laboratorio.md`](fase-1-laboratorio.md).
+
 - **Incluye:** Debian 13 netinst sin escritorio instalado en VMware
   (arm64 en la Mac y amd64 en Windows), snapshot `base-limpia` y las misiones 1 a 5 del onboarding.
 - **Terminado cuando:** las dos VMs arrancan en TTY, tienen snapshot, el compa

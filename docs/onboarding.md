@@ -70,7 +70,7 @@ Aquí entiendes por qué se llaman **dotfiles**.
 
 **Comandos:** `git config`, `git clone`, `git status`, `git add`, `git commit`, `git log`, `git branch`, `git switch`, `git push`.
 
-1. Crea tu cuenta de GitHub y pásale tu usuario a Santiago.
+1. Ya eres colaborador del repo (`@P01ar7`). Si GitHub te pide aceptar una invitación, acéptala.
 2. Configura tu nombre y correo en Git.
 3. Clona T3SL4 en tu VM.
 4. Crea una rama `docs/mi-primer-cambio`.

@@ -11,8 +11,8 @@ Estados posibles: Propuesta / Aprobada / Implementada / Revertida / En revisión
 | ADR-005 | Bash para el sistema, Rust para herramientas propias | Aprobada |
 | ADR-006 | Copiar un subconjunto curado de los dotfiles | Propuesta |
 | ADR-007 | La IA no escribe el código del proyecto | Aprobada |
-| ADR-008 | Licencia | Propuesta (pendiente) |
-| ADR-009 | Flujo Git del equipo | Propuesta (pendiente) |
+| ADR-008 | Licencia GPL-3.0 y repo público | Aprobada |
+| ADR-009 | Flujo Git: `main` protegida + ramas + PR | Aprobada |
 
 ---
 
@@ -86,20 +86,22 @@ Estados posibles: Propuesta / Aprobada / Implementada / Revertida / En revisión
 - **Consecuencias:** se avanza más lento, pero con aprendizaje real. Se permiten ejemplos pequeños para explicar un concepto, pero no el entregable completo.
 - **Estado:** Aprobada.
 
-## ADR-008 — Licencia
+## ADR-008 — Licencia GPL-3.0 y repo público
 
-- **Fecha:** 2026-09-23
-- **Contexto:** el código propio (scripts, configuración, herramientas en Rust) necesita una licencia antes de hacer público el repo.
+- **Fecha:** 2026-09-24
+- **Contexto:** el código propio (scripts, configuración, herramientas en Rust) necesita una licencia; sin ella, aunque el repo sea público, nadie puede usarlo legalmente.
 - **Opciones:** GPL-3.0 / MIT / sin licencia (repo privado).
-- **Propuesta:** GPL-3.0, que es lo habitual en distros y en el ecosistema Debian, y obliga a que los derivados sigan siendo libres.
-- **Pendiente:** decisión de Santiago y definir si el repo será público o privado.
-- **Estado:** Propuesta.
+- **Decisión:** GPL-3.0 para todo el repo, y el repo será **público**.
+- **Motivo:** es la tradición de las distros y del ecosistema Debian, y protege el trabajo: nadie puede tomar T3SL4, cerrarlo y distribuirlo como propio. Un repo público sirve como portafolio y obliga a buenas prácticas.
+- **Consecuencias:** todo lo que se incluya debe ser compatible con GPL-3.0; por ejemplo, las fuentes Helvetica de los dotfiles **no** entran. Si en la Fase 5 una herramienta en Rust necesita otra licencia (por ejemplo MIT, por compatibilidad con crates), se decide en un ADR propio. Siendo público, se refuerza la regla de no subir IPs reales, tokens ni capturas con datos.
+- **Estado:** Aprobada. `LICENSE` agregado; el cambio de visibilidad lo hace Santiago en GitHub.
 
 ## ADR-009 — Flujo Git del equipo
 
 - **Fecha:** 2026-09-23
 - **Contexto:** dos personas con niveles muy distintos trabajan en el mismo repo.
-- **Propuesta:** `main` protegida; todo cambio va en una rama (`feature/`, `fix/`, `docs/`, `spike/`) y entra por PR revisado por Santiago. Commits en el formato `tipo: descripción` (metodología §32.4).
+- **Fecha de aprobación:** 2026-09-24
+- **Decisión:** `main` protegida; todo cambio va en una rama (`feature/`, `fix/`, `docs/`, `spike/`) y entra por PR revisado y aprobado por Santiago. Commits en el formato `tipo: descripción` (metodología §32.4).
 - **Motivo:** la revisión de PRs también es parte del aprendizaje y protege `main`.
-- **Pendiente:** aprobación de Santiago, el usuario de GitHub del compa y la configuración de la protección de rama.
-- **Estado:** Propuesta.
+- **Consecuencias:** el compa (`@P01ar7`) tiene permiso *write*; sin protección de rama podría hacer push directo a `main`. Hay que crear un ruleset en GitHub (Settings → Rules → Rulesets) que exija PR con 1 aprobación en `main`.
+- **Estado:** Aprobada. Falta configurar el ruleset (acción manual de Santiago).
