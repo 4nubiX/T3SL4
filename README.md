@@ -63,6 +63,7 @@ Detalle y motivos en [`docs/10-decisions-adr.md`](docs/10-decisions-adr.md).
 | [`docs/10-decisions-adr.md`](docs/10-decisions-adr.md) | Registro de decisiones |
 | [`docs/onboarding.md`](docs/onboarding.md) | Ruta de aprendizaje para quien empieza desde cero |
 | [`docs/fase-1-laboratorio.md`](docs/fase-1-laboratorio.md) | Montar la VM arm64 en la Mac y validar supuestos |
+| [`docs/referencias/`](docs/referencias/) | Material externo de consulta (no se usa en el build) |
 | [`docs/handoffs/`](docs/handoffs/) | Cierres de sesión |
 | [`tracker.md`](tracker.md) | Estado actual y próximo paso |
 | [`CHANGELOG.md`](CHANGELOG.md) | Historial de cambios |
