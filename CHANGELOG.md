@@ -13,4 +13,9 @@ El proyecto usará versionado semántico a partir de la primera versión instala
   onboarding y handoff de arranque.
 
 ### Changed
+- El repo ya es público: se quita del tracker como acción pendiente.
 - ADR-008 (GPL-3.0, repo público) y ADR-009 (flujo Git con PR) pasan a Aprobada.
+
+### Fixed
+- Guía de la Fase 1: se elimina la alternativa `brew install --cask vmware-fusion`
+  porque el cask ya no existe en Homebrew.
