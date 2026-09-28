@@ -13,4 +13,6 @@ El proyecto usará versionado semántico a partir de la primera versión instala
   onboarding y handoff de arranque.
 
 ### Changed
+- `pkglist.x86_64.txt` (lista de paquetes de un ISO de Arch) se movió de la raíz a
+  `docs/referencias/arch-pkglist.x86_64.txt`, como material de referencia.
 - ADR-008 (GPL-3.0, repo público) y ADR-009 (flujo Git con PR) pasan a Aprobada.

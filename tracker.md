@@ -10,20 +10,20 @@
 | Estado | Spec → Laboratorio |
 | Fase actual | Fase 0 cerrada; inicia la Fase 1 (laboratorio) |
 | Gate actual | Gate 1 (spec lista): **GO**. Siguiente: Gate 2 (arquitectura aprobada, al cerrar la Fase 1) |
-| Última acción | 2026-09-24: se aprobaron ADR-008 (GPL-3.0, repo público) y ADR-009 (flujo Git); se agregó `LICENSE` y la guía de la Fase 1 |
+| Última acción | 2026-09-28: `pkglist.x86_64.txt` de Arch movido a `docs/referencias/`. Antes, el 2026-09-24, se fusionó el PR #1 (Fase 0 y Gate 1) |
 | Próximo paso | Santiago: ruleset de `main`, repo público, Fusion + VM arm64 ([guía](docs/fase-1-laboratorio.md)). @P01ar7: misión M1 del onboarding |
 | Bloque actual | Fase 1: laboratorio |
 | Riesgos | Ver matriz en [`docs/01-prd.md`](docs/01-prd.md#9-riesgos) |
 | Archivos tocados | LICENSE, README.md, CHANGELOG.md, tracker.md, docs/* |
 | Documentos faltantes | `11-runbook.md` (entra en la Fase 4) |
 | Último handoff | [`docs/handoffs/2026-09-24-cierre-gate-1.md`](docs/handoffs/2026-09-24-cierre-gate-1.md) |
-| Fecha de actualización | 2026-09-24 |
+| Fecha de actualización | 2026-09-28 |
 
 ## Acciones manuales pendientes (Santiago, en GitHub)
 
 | Acción | Dónde | Por qué |
 |---|---|---|
-| Crear ruleset en `main`: PR obligatorio + 1 aprobación | Settings → Rules → Rulesets | ADR-009: @P01ar7 tiene *write* y hoy podría hacer push directo a `main` |
+| Crear ruleset en `main`: PR obligatorio + 1 aprobación | Settings → Rules → Rulesets | ADR-009: @P01ar7 tiene *write*, y el 2026-09-23 ya subió un archivo directo a `main` sin PR |
 | Cambiar el repo a público | Settings → General → Danger Zone | ADR-008 |
 
 ## Pendiente sin fecha
